@@ -1,0 +1,27 @@
+SCRIPT: train_single_terrain_conv_sum_datasequence.py
+path_data: ['/home/server01/Marco_stuff/my_chrono_project_data_collection/Dataset/Exp_2021-08-01 15-18-24/', '/home/server01/Marco_stuff/my_chrono_project_data_collection/Dataset/Exp_2021-08-04 16-58-16/']
+EPOCHS: 301
+MODEL: model_single_conv1d_sequence_lin_v2
+ENERGY_NORM_TYPE: standardize
+LENGTH_SEQUENCE: 3
+LENGTH_PAST: 0
+MERGED_MODEL: True
+LENGTH_SUM: 3
+LOSS: mse
+LEARNING_RATE: 0.0001
+BATCH_SIZE: 32
+MAX_NO_IMPROVEMENT_EPOCHS: 50
+FREQ_VAL: 1
+TEST_PERC: 0.2
+TERRAIN_IDS: []
+FRAC_TRAIN: 1
+REMOVE_ROUGH: False
+MAX_VAR_ROUGH: 2.25
+LOG_DIR: ./log_single_terrain_conv_sum_mixed/
+INPUT_FEATURES: ['wheel_trace']
+WHEEL_TRACE_SHAPE: (78, 40)
+REMOVE_CENTRAL_BAND: 0
+path_sum_indices: ['/home/server01/Marco_stuff/my_chrono_project_data_collection/Dataset/Exp_2021-08-01 15-18-24/Merged_Data/simple_3_sum_0_past_indices.csv', '/home/server01/Marco_stuff/my_chrono_project_data_collection/Dataset/Exp_2021-08-04 16-58-16/Merged_Data/obst_augm_rigid_3_sum_0_past_False_rough_indices.csv']
+TERRAIN_ID: 16
+energy_mean: [13.66497263]
+energy_std: [9.4592732]

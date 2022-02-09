@@ -1,5 +1,5 @@
-# Deep Meta-Learning Energy-Aware Path Planner for Unmanned Ground Vehicles in Unknown Terrain
-This is the implementation of the paper: *"Deep Meta-Learning Energy-Aware Path Planner for Unmanned Ground Vehicles in Unknown Terrain", Visca et al., 2021, DOI: [techrxiv.14812905.v1](https://www.techrxiv.org/articles/preprint/Deep_Meta-Learning_Energy-Aware_Path_Planner_for_Unmanned_Ground_Vehicles_in_Unknown_Terrains/14812905/1)*.
+# Meta-Conv1D Energy-Aware Path Planner for Mobile Robots in Unstructured Terrains
+This is the implementation of the paper: *"Meta-Conv1D Energy-Aware Path Planner for Mobile Robots in Unstructured Terrains", Visca et al., 2022, DOI: [techrxiv.14812905.v1](https://www.techrxiv.org/articles/preprint/Deep_Meta-Learning_Energy-Aware_Path_Planner_for_Unmanned_Ground_Vehicles_in_Unknown_Terrains/14812905/1)*.
 
 <img src="https://github.com/picchius94/META-UGV/blob/main/Images/transition.gif" width="270"> <img src="https://github.com/picchius94/META-UGV/blob/main/Images/transition2.gif" width="270"> <img src="https://github.com/picchius94/META-UGV/blob/main/Images/transition3.gif" width="270">
 
@@ -57,6 +57,7 @@ The following dependencies are required:
 - pandas
 - pychrono
 - tensorflow
+- tensorflow-addons
 - opensimplex
 
 

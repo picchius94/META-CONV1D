@@ -4,38 +4,30 @@ This is the implementation of the paper: *"Meta-Conv1D Energy-Aware Path Planner
 <img src="https://github.com/picchius94/META-UGV/blob/main/Images/transition.gif" width="270"> <img src="https://github.com/picchius94/META-UGV/blob/main/Images/transition2.gif" width="270"> <img src="https://github.com/picchius94/META-UGV/blob/main/Images/transition3.gif" width="270">
 
 ## Dataset Collection
-A dataset of geometry-energy pairs from different terrain types has already been collected and it is avalilable at `./Dataset/Exp00/data.csv`.
+- Run `collect_dataset_handler.py` to collect multiple geometry-energy pairs datasets.
+- Run `merge_dataset.py` to merge the datasets
+- Run `generate_sum_indices.py` (needed for the models training)
 
-If you want to collect new data, modify and run `collect_dataset.py`.
 ### Note!
 For visualisation, Line 37 in `my_chrono_simulator.py` must be changed with the correct local path to the Chrono Data directory.
 
 ## Training Model
-The different neural network models have already been trained on the `./Dataset/Exp00/data.csv` dataset and the model weights are available at `./Training/Exp00/log*`.
+The different neural network models have already been trained and the model weights are available at `./Training/Exp00/log*`.
 
 If you want to create new models, modify `models.py`.
 
-If you want to train new models, modify and run `train_meta.py` or `train_separate_model.py`.
+If you want to train new models, modify and run `train_Meta-Conv1D.py`, `train_Meta-Plane.py`, or `train_ST-Conv1D.py`.
 
-## Experiments
+Run `evaluate_Meta-Conv1D.py`, `evaluate_Meta-Plane.py`, or `evaluate_ST-Conv1D.py` for evaluating the models on the validation datasets.
+
+## Path Planning
+Run `path_planning_experiment_quantitative.py` to test the path planning integration of the three methods in randomly generated environments.
+
+All the entries of the dictionary `params` can be changed to modify map size, initial vehicle position, etc..
+
 ### Note!
 For visualisation, Line 37 in `my_chrono_simulator.py` must be changed with the correct local path to the Chrono Data directory.
-### Effect of Terrain Transition
-In this experiment, the performance of the meta-adaptive path planner are tested, when the vehicle transitions on a new terrain.
 
-Run `planning_simulation_trans_performance.py`.
-
-All the entries of the dictionary `params` can be changed to modify terrain type, map size, initial vehicle position, etc..
-
-### Effect of Heuristic Function
-In this experiment, the effect of different heuristic functions for the meta-adaptive path planner are tested.
-
-Run `planning_simulation_h_performance.py`.
-
-All the entries of the dictionary `params` can be changed to modify terrain type, map size, initial vehicle position, etc..
-
-
-## Miscellaneous
 ### Terrain Types and SCM Parameters
 Deformable terrains are modelled using the Project Chrono [[1]](#1) implementation of the Soil Contact Model (SCM) [[2]](#2). The complete list of implemented terrain types and respective terramechanical parameters is given in the image below and at `terrain_list.py`.
 
@@ -47,7 +39,7 @@ Deformable terrains are modelled using the Project Chrono [[1]](#1) implementati
 The geometry of the environments is generated using a Perline Noise algorithm described in [[3]](#3).
 For more info check `terrain_generator.py`.
 
-### Path Planning
+### Path Planner
 The file `A_star.py` contains a class and functions that handle many utilities related to path planning. In principle, there is no need to access this file.
 
 ## Dependencies

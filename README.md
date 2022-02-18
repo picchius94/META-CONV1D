@@ -11,6 +11,17 @@ This is the implementation of the paper: *"Meta-Conv1D Energy-Aware Path Planner
 ### Note!
 For visualisation, Line 37 in `my_chrono_simulator.py` must be changed with the correct local path to the Chrono Data directory.
 
+### Terrain Types and SCM Parameters
+Deformable terrains are modelled using the Project Chrono [[1]](#1) implementation of the Soil Contact Model (SCM) [[2]](#2). The complete list of implemented terrain types and respective terramechanical parameters is given in the image below and at `terrain_list.py`.
+
+<p align="center">
+<img src="https://github.com/picchius94/META-UGV/blob/main/Images/terrain_types.png" width="700">
+</p>
+
+### Geometry Generator
+The geometry of the environments is generated using a Perline Noise algorithm described in [[3]](#3).
+For more info check `terrain_generator.py`.
+
 ## Training Model
 The different neural network models have already been trained and the model weights are available at `./Training/Exp00/log*`.
 
@@ -24,20 +35,6 @@ Run `evaluate_*.py` for evaluating the models on the validation datasets.
 Run `path_planning_experiment_quantitative.py` to test the performance of the three methods, integrated into the path planner, in randomly generated unstructured environments.
 
 All the entries of the dictionary `params` can be changed to modify map size, initial vehicle position, etc..
-
-### Note!
-For visualisation, Line 37 in `my_chrono_simulator.py` must be changed with the correct local path to the Chrono Data directory.
-
-### Terrain Types and SCM Parameters
-Deformable terrains are modelled using the Project Chrono [[1]](#1) implementation of the Soil Contact Model (SCM) [[2]](#2). The complete list of implemented terrain types and respective terramechanical parameters is given in the image below and at `terrain_list.py`.
-
-<p align="center">
-<img src="https://github.com/picchius94/META-UGV/blob/main/Images/terrain_types.png" width="700">
-</p>
-
-### Geometry Generator
-The geometry of the environments is generated using a Perline Noise algorithm described in [[3]](#3).
-For more info check `terrain_generator.py`.
 
 
 ## Dependencies

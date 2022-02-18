@@ -39,8 +39,6 @@ Deformable terrains are modelled using the Project Chrono [[1]](#1) implementati
 The geometry of the environments is generated using a Perline Noise algorithm described in [[3]](#3).
 For more info check `terrain_generator.py`.
 
-### Path Planner
-The file `A_star.py` contains a class and functions that handle many utilities related to path planning. In principle, there is no need to access this file.
 
 ## Dependencies
 The following dependencies are required:

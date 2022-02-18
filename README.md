@@ -16,9 +16,9 @@ The different neural network models have already been trained and the model weig
 
 If you want to create new models, modify `models.py`.
 
-If you want to train new models, modify and run `train_Meta-Conv1D.py`, `train_Meta-Plane.py`, or `train_ST-Conv1D.py`.
+If you want to train new models, modify and run `train_*.py`.
 
-Run `evaluate_Meta-Conv1D.py`, `evaluate_Meta-Plane.py`, or `evaluate_ST-Conv1D.py` for evaluating the models on the validation datasets.
+Run `evaluate_*.py` for evaluating the models on the validation datasets.
 
 ## Path Planning
 Run `path_planning_experiment_quantitative.py` to test the path planning integration of the three methods in randomly generated environments.

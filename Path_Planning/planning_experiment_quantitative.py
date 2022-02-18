@@ -1,6 +1,7 @@
 # Planning Experiment in environments with different obstacles per unit area
 # Effect of unstructured geometries experiment in paper
-
+import sys
+sys.path.append("../Dataset_Collection/")
 import numpy as np
 import my_chrono_simulator as mcs
 import terrain_generator as tg

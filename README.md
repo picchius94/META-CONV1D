@@ -21,7 +21,7 @@ If you want to train new models, modify and run `train_*.py`.
 Run `evaluate_*.py` for evaluating the models on the validation datasets.
 
 ## Path Planning
-Run `path_planning_experiment_quantitative.py` to test the path planning integration of the three methods in randomly generated environments.
+Run `path_planning_experiment_quantitative.py` to test the performance of the three methods, integrated into the path planner, in randomly generated unstructured environments.
 
 All the entries of the dictionary `params` can be changed to modify map size, initial vehicle position, etc..
 

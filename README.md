@@ -15,7 +15,7 @@ For visualisation, Line 37 in `my_chrono_simulator.py` must be changed with the 
 Deformable terrains are modelled using the Project Chrono [[1]](#1) implementation of the Soil Contact Model (SCM) [[2]](#2). The complete list of implemented terrain types and respective terramechanical parameters is given in the image below and at `terrain_list.py`.
 
 <p align="center">
-<img src="https://github.com/picchius94/META-UGV/blob/main/Images/terrain_types.png" width="700">
+<img src="https://github.com/picchius94/META-CONV1D/blob/main/Images/SCM_Params.png" width="700">
 </p>
 
 ### Geometry Generator

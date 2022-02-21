@@ -1,7 +1,7 @@
 # Meta-Conv1D Energy-Aware Path Planner for Mobile Robots in Unstructured Terrains
 This is the implementation of the paper: *"Meta-Conv1D Energy-Aware Path Planner for Mobile Robots in Unstructured Terrains", Visca et al., 2022.
 
-<img src="https://github.com/picchius94/META-UGV/blob/main/Images/transition.gif" width="270"> <img src="https://github.com/picchius94/META-UGV/blob/main/Images/transition2.gif" width="270"> <img src="https://github.com/picchius94/META-UGV/blob/main/Images/transition3.gif" width="270">
+<img src="https://github.com/picchius94/META-CONV1D/blob/main/Images/transition_conv_1.gif" width="270"> <img src="https://github.com/picchius94/META-CONV1D/blob/main/Images/transition_conv_2.gif" width="270"> <img src="https://github.com/picchius94/META-CONV1D/blob/main/Images/transition_conv_3.gif" width="270">
 
 ## Dataset Collection
 - Run `collect_dataset_handler.py` to collect multiple geometry-energy pairs datasets.

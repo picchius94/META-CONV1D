@@ -22,7 +22,7 @@ Deformable terrains are modelled using the Project Chrono [[1]](#1) implementati
 The geometry of the environments is generated using a Perline Noise algorithm described in [[3]](#3).
 For more info check `terrain_generator.py`.
 
-## Training Model
+## Training
 Our neural network model and alternative models [[4]](#4) [[5]](#5) have already been trained and the model weights are available at `./Training/Exp00/log*`.
 
 If you want to create new models, modify `models.py`.

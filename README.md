@@ -25,14 +25,14 @@ For more info check `terrain_generator.py`.
 ## Training
 Our neural network model and alternative models [[4]](#4) [[5]](#5) have already been trained and the model weights are available at `./Training/Exp00/log*`.
 
-If you want to create new models, modify `models.py`.
+Modify `models.py` for creating new models.
 
-If you want to train new models, modify and run `train_*.py`.
+Modify and run `train_*.py` for training new models.
 
 Run `evaluate_*.py` for evaluating the models on the validation datasets.
 
 ## Path Planning
-Run `path_planning_experiment_quantitative.py` to test the performance of the three methods, integrated into the path planner, in randomly generated unstructured environments.
+Run `path_planning_experiment_quantitative.py` to test the performance of different energy predictors, integrated into the path planner, in randomly generated unstructured environments.
 
 All the entries of the dictionary `params` can be changed to modify map size, initial vehicle position, etc..
 

@@ -1,5 +1,5 @@
 # Meta-Conv1D Energy-Aware Path Planner for Mobile Robots in Unstructured Terrains
-This is the implementation of the paper: *"Meta-Conv1D Energy-Aware Path Planner for Mobile Robots in Unstructured Terrains", Visca et al., 2022.
+This is the implementation of the paper: *"Meta-Conv1D Energy-Aware Path Planner for Mobile Robots in Unstructured Terrains", Visca et al., 2022, DOI: [10.36227/techrxiv.19538575.v1](https://doi.org/10.36227/techrxiv.19538575.v1).
 
 <img src="https://github.com/picchius94/META-CONV1D/blob/main/Images/transition_conv_1.gif" width="270"> <img src="https://github.com/picchius94/META-CONV1D/blob/main/Images/transition_conv_2.gif" width="270"> <img src="https://github.com/picchius94/META-CONV1D/blob/main/Images/transition_conv_3.gif" width="270">
 

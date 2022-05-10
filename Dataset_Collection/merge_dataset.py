@@ -3,7 +3,7 @@ import os
 
 
 
-path_data = "./Datasets/Exp_2021-08-01 15-18-24/"
+path_data = "./Datasets/Exp_2022-04-09 10-04-58/"
 #path_data = "./Datasets/Exp_2021-08-04 16-58-16/"
 
 path_dataset_plane = path_data + "Merged_Data/" + "plane_data.csv"

@@ -29,13 +29,13 @@ terrain_ids = [12,8,7,0,22,5,14,13,4,9,11,10,1,3,15,16,17]
     
 num_runs_per_id = 1500
 simplex_terrain_types = ["wavy","smooth","rough"]
-simplex_types_probs = [0.65,0.25,0.1] # proportions of the terrain types in the dataset 
+simplex_types_probs = [0.65,0.35,0.] # proportions of the terrain types in the dataset 
 terrain_params_noise = 0 # noise to add to the terramechanical parameters (percentage of each value)
 
 
 map_size_x = 30
 map_size_y = 7
-x0 = -12.5
+x0 = -12
 y0 = 0
 yaw0 = 0
 

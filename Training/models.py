@@ -1,12 +1,9 @@
 import tensorflow as tf
 from tensorflow.keras import Input
 from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Conv1D, MaxPooling1D, AveragePooling1D, Conv2D, MaxPooling2D, AveragePooling2D, Flatten, Lambda, Dense, Dropout, ReLU, Multiply, Add, Reshape, Concatenate, RepeatVector
-from tensorflow.keras.layers import LSTM, TimeDistributed, GRU, Cropping1D, Conv1DTranspose, UpSampling1D
+from tensorflow.keras.layers import Conv1D, MaxPooling1D, AveragePooling1D, Flatten, Dense, Reshape, Concatenate
+from tensorflow.keras.layers import LSTM, TimeDistributed, Cropping1D
 
-import tensorflow_probability as tfp
-tfd = tfp.distributions
-tfpl = tfp.layers
 
 
         
